@@ -166,10 +166,11 @@ BOOL CALLBACK DlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam)
           {
             SetTextColor(hdcStatic, RGB(0, 0, 0));
           }
-          //  SetTextColor(hdcStatic, RGB(0xCF, 0xD9, 0xFF));
-          // SetBkColor(hdcStatic, RGB(0xd4, 0xd0, 0xc8));
           SetBkColor(hdcStatic, RGB(0xA5, 0xC0, 0xA4));
-          // SetBkColor(hdcStatic, RGB(0xC0, 0xC0, 0xC0)); //win98 grey
+          //  Other colours
+          //  SetTextColor(hdcStatic, RGB(0xCF, 0xD9, 0xFF));
+          //  SetBkColor(hdcStatic, RGB(0xd4, 0xd0, 0xc8));
+          //  SetBkColor(hdcStatic, RGB(0xC0, 0xC0, 0xC0)); //win98 grey
           return (INT_PTR)greyed;
           }
         }

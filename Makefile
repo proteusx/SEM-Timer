@@ -7,7 +7,6 @@ CC = /usr/bin/i686-pc-mingw32-g++
 
 
 CFLAGS = -O3 -D WINVER=0x501 $(WARNS) 
-# -D UNICODE -D _UNICODE -D WINVER=0x501 $(WARNS) 
 LDFLAGS = -s -Wl,--subsystem,windows -lgdi32 
 RC = /usr/bin/i686-pc-mingw32-windres
 
