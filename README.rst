@@ -1,15 +1,18 @@
 SEM Timer
 +++++++++
 
-.. figure:: sem-timer-active.png
-   :scale: 100
-   :align: center
-
 This is a simple **cumulative timer** that can count up to 1000 hours.  The original
 purpose of this timer was to time the lifespan of electron gun filaments used
 in an intermittently operated Scanning Electron Microscope (SEM); but it can be
 suitable for other uses. For example, it can be used by programmers or solicitors
 to count cumulatively the time spent on a project for billing purposes.
+
+
+
+.. figure:: sem-timer-active.png
+   :scale: 100
+   :align: center
+
 
 Features
 --------
