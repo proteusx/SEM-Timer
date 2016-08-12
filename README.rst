@@ -41,9 +41,10 @@ Features
 Installation and use
 --------------------
 
-SEM Timer is fully portable (i.e. no installation is  needed).  Download the 32
-or 64 bit version, unzip the file in some convenient location and click on the
-executable file ``timer.exe``.  In Linux it can be run via **Wine** with the command: ``wine timer.exe``.
+SEM Timer is fully portable (i.e. no installation is  needed).  From the latest
+release download the x86 or x64 compressed binary, unzip the file in some
+convenient location and click on the executable file ``timer.exe``.  In Linux
+it can be run via **Wine** with the command: ``wine timer.exe``.
 
 
 Compiling the source
