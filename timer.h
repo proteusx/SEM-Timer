@@ -8,7 +8,7 @@
 //-----------------------
 // Function Prototypes
 //-----------------------
-BOOL CALLBACK DlgProc(HWND, UINT, WPARAM,  LPARAM );
+INT_PTR CALLBACK DlgProc(HWND, UINT, WPARAM,  LPARAM );
 void DisplayTime(double);
 void data_file_name(void);
 void SaveTime( double * );

@@ -3,11 +3,14 @@
  *
  *       Filename:  timer.c
  *
- *    Description:  
+ *    Description:  Cumulative timer to time the lifetime of
+ *                  Scanning Electron Microscope filaments
  *
  *        Version:  3.0
  *        Created:  01/13/2014 
  *       Compiler:  mingw32-g++ 
+ *           
+ *           Note:  Adjust makefile to compile for 32 bit or 64 bit windows
  *
  * ================================================================================
  */
@@ -71,7 +74,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
 /////////////////////////////////////////////////////////////////////////////
 //  CallBack routine 
 /////////////////////////////////////////////////////////////////////////////
-BOOL CALLBACK DlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam)
+INT_PTR CALLBACK DlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam)
 {
   int buttonID;              //int  event;
 	switch(Message)
