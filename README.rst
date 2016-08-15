@@ -16,18 +16,21 @@ to count cumulatively the time spent on a project for billing purposes.
 
 Features
 --------
+
 * It runs on Microsoft Windows (all versions) and Linux (via Wine) 
   in 32 bit or 64 bit systems.
 
-* Simple intuitive operation with just two buttons  (start/stop and reset).
+* It is written in C using only standard WIN32 API calls.
+  
+* Simple intuitive user interface with only two buttons  (start/stop and reset).
   No configuration required.
  
-* The time is automatically stored between sessions (it even survives a system crash).
-  When restarted timing is resumed from the last value.
-  Time is saved in a file (``%TEMP%\time_counter.dat``) and in theory, if 
-  this file is transfered to another computer, the timer can be resumed there.
+* The elapsed  time is automatically stored between sessions (it even survives
+  a system crash).  When restarted timing is resumed from the last value.  Time
+  is saved in a file (``%TEMP%\time_counter.dat``) and in theory, if this file
+  is transfered to another computer, the timer can be resumed there.
 
-* Although this is primarily an hours-minutes timer the seconds  are shown to
+* Although this is primarily an hours-minutes timer the seconds are also hown to
   serve as a visual indication of timer activity.
 
 * When the timer is stopped/inactive, this is indicated by a slightly 
