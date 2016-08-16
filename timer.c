@@ -76,23 +76,19 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
 /////////////////////////////////////////////////////////////////////////////
 INT_PTR CALLBACK DlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam)
 {
-  int buttonID;              //int  event;
+  int buttonID;                        //int  event;
 	switch(Message)
 	{
-    case WM_CLOSE: 
-        SaveTime(&ElapsedTime);
-        // Sleep(1000);
+    case WM_CLOSE:                     // 'X' has been pressed
+        SaveTime(&ElapsedTime);        
         DestroyWindow(hwnd); 
         break;
     case WM_DESTROY:
-        // Save timer data before closing window         
-        //Shell_NotifyIcon(NIM_DELETE, &niData);
-        DestroyWindow(hwnd);
         PostQuitMessage(0);
         break;
     case WM_TIMER:
             if(wParam == main_timer_id)
-            {     //call display time routine
+            {                           //call display time routine
                 ElapsedTime = StoredTime + (GetTickCount() - StartTime)/1000.0f;
                 DisplayTime(ElapsedTime);
             }
@@ -105,7 +101,6 @@ INT_PTR CALLBACK DlgProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam)
     case WM_COMMAND:
         {
           buttonID = LOWORD (wParam);
-          // event = HIWORD (wParam);
           switch (buttonID)
           {
             case IDC_START:                       // Start/stop button

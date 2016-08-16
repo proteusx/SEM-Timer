@@ -55,7 +55,7 @@ timer.o: $(SOURCE)
 	$(CC) $(CFLAGS) -c $< -o $@ 
 
 clean:
-	-rm $(EXEC) $(OBJS)
+	$(RM) $(EXEC) $(OBJS)
 
 
 ctags:  
